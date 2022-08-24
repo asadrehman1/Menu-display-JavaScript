@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-container {
+    border-radius: 5px;
+    border: 2px solid goldenrod;
+}
+
+header {
+    margin-top: 50px;
+}
+
+.underline {
+    width: 70px;
+    height: 0.25rem;
+    background: goldenrod;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+}
+
+.img-container img {
+    float: left;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.menu-item {
+    display: flex;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.item-details {
+    margin-left: 10px;
+}
+
+.item-details-text {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.item-details-1 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid goldenrod;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.text {
+    text-align: start;
+    letter-spacing: .5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+h4 {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.btn-container button {
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    padding: 7px 15px;
+    cursor: pointer;
+    margin: 20px 5px;
+    transition: transform .3s;
+}
+
+.btn-container button:hover {
+    background-color: goldenrod;
+    color: white;
+    transform: scale(1.1);
+}
+
+.price {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+@media (max-width:682px) {
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .img-container {
+        width: 250px;
+    }
+}
